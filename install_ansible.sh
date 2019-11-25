@@ -9,7 +9,7 @@ if [ ! -f /home/ansible/.ssh ]; then
         echo "ansible ALL=(ALL) NOPASSWD: ALL" > /etc/sudoers.d/ansible
 
         mkdir /home/ansible/.ssh -m 700        
-        wget --no-check-certificate https://raw.githubusercontent.com/khinpyaephyosan/OHOL/master/config -O /home/ansible/.ssh/config
+        wget --no-check-certificate https://raw.githubusercontent.com/khinpyaephyosan/OHOL/master/openssh/config -O /home/ansible/.ssh/config
         ssh-keygen -f /home/ansible/.ssh/id_rsa -t rsa -b 1024 -P "" -C "ansible@controller"
         chown -R ansible:ansible /home/ansible/.ssh
         chmod -R 600 /home/ansible/.ssh/*
@@ -23,5 +23,5 @@ if ! command -v ansible >/dev/null; then
         pip3 install ansible==2.9.0
 fi
 
-wget --no-check-certificate https://raw.githubusercontent.com/khinpyaephyosan/OHOL/master/ansible.cfg -O /home/ansible/ansible.cfg
-wget --no-check-certificate https://raw.githubusercontent.com/khinpyaephyosan/OHOL/master/inventory -O /home/ansible/inventory
+wget --no-check-certificate https://raw.githubusercontent.com/khinpyaephyosan/OHOL/master/ansible/ansible.cfg -O /home/ansible/ansible.cfg
+wget --no-check-certificate https://raw.githubusercontent.com/khinpyaephyosan/OHOL/master/ansible/inventory -O /home/ansible/inventory
