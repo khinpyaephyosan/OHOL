@@ -1,2 +1,5 @@
 # OHOL
-KPPS is fool
+git clone https://github.com/khinpyaephyosan/OHOL.git
+cd OHOL
+vagrant up
+
