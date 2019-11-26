@@ -1,5 +1,6 @@
 Vagrant.configure("2") do |config|
-  config.vm.box = "kpcent7.box"
+  config.vm.box = "LillianPhyoe/lillianCent7"
+  config.vm.box_version = "1"
 
   config.vm.define "web" do |web|
     web.vm.network :private_network, ip: "192.168.33.13"
