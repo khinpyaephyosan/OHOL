@@ -7,7 +7,10 @@ cd OHOL \
 vagrant up </br> 
 
 # Usage
-C:\Users\Admin> vagrant ssh web or db or controller 
+C:\Users\Admin> vagrant ssh web or db or controller  
+usrname:password \
+ansible:ansible  
+vagrant:vagrant
 
 # Officially Credit to
 https://gist.github.com/tknerr/291b765df23845e56a29 \
